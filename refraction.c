@@ -41,12 +41,12 @@ int main(int argc, char **argv) {
 
   if (theta1 < -180 || theta1 > 180) {
     printf("Invalid angle (must be [-180, 180]) theta1: %.6f\n", theta1);
-    return 1;
+    return 0;
   }
   //making sure not to have an extreme index
   if (index2 < 1) {
     printf("Though theoretically possible, we don't accept indexes <1: %.f\n", index2);
-    return 1;
+    return 0;
   }
 
   //check to make sure the information falls into the valid range of angles
