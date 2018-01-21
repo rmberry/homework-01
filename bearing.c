@@ -13,8 +13,9 @@ int main(int argc, char **argv) {
          longitude2rad, deltarad, theta, thetarad;
   const double pi = 3.14159265359;
 
-  printf("Input a latitude/longitude pair for the first position\n");
-  scanf("%lf, %lf", &latitude1, &longitude1);
+  printf("Input a latitude and then a longitude for the first position\n");
+  scanf("%lf", &latitude1);
+  scanf("%lf", &longitude1);
   printf("%lf, %lf\n", latitude1, longitude1);
 
   if (latitude1 < -180 || latitude1 > 180) {
@@ -26,8 +27,9 @@ int main(int argc, char **argv) {
     return 0;
   }
 
-  printf("Input a latitude/longitude pair for the second position\n");
-  scanf("%lf, %lf", &latitude2, &longitude2);
+  printf("Input a latitude and then a longitude for the second position\n");
+  scanf("%lf", &latitude2);
+  scanf("%lf", &longitude2);
   printf("%lf, %lf\n", latitude2, longitude2);
 
   if (latitude2 < -180 || latitude2 > 180) {
