@@ -41,8 +41,8 @@ int main(int argc, char **argv) {
   }
 
   //making sure that the money increased in value and that it didn't decrease
-  if (initialValue > finalValue) {
-    printf("Invalid input final value must be greater than initial value");
+  if (finalValue < 0) {
+    printf("Invalid input final value must be positive");
     return 0;
   }
 
